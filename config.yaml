@@ -6,4 +6,6 @@ kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/redis:latest
+  - registry.k8s.io/autoscaling/vpa-recommender:1.0.0
+  - registry.k8s.io/autoscaling/vpa-updater:1.0.0
+  - registry.k8s.io/autoscaling/vpa-admission-controller:1.0.0
