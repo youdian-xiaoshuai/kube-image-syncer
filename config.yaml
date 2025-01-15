@@ -1,9 +1,12 @@
 default:
   push_kubernetes: false
-  push_images: false
+  push_images: true
 
 kubernetes:
   version: v1.23.6
 
 images:
-  - docker.io/nginx:latest
+  - docker.io/grafana/grafana
+  - docker.io/curlimages/curl:7.85.0
+  - docker.io/library/busybox:1.31.1
+  - docker.io/grafana/grafana-image-renderer:latest
